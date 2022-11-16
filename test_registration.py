@@ -109,7 +109,7 @@ def register_deformed(modA_path, modB_path, modA_original_path, config_path, out
         registered_path = os.path.join(out_path, filename + image_extension)
         comir_registered_path = os.path.join(out_path, "comir_" + filename + image_extension)
     
-        """
+        
         #Perform registration
         t = time.time()
         process = subprocess.Popen(['../inspire-build/InspireRegister', '2', '-ref', pathA_original, '-flo', pathA, '-deform_cfg', config_path, '-out_path_deform_forward', tforward_path, '-out_path_deform_reverse', treverse_path],
@@ -122,7 +122,7 @@ def register_deformed(modA_path, modB_path, modA_original_path, config_path, out
                                    stderr=subprocess.PIPE)
         stdout, stderr = process.communicate()
     
-        """
+        
         process = subprocess.Popen(['../itkAlphaAMD-build/ACTransformLandmarks', '-dim', '2', '-transform', tforward_path, '-in', landmarkB_path, '-out', landmark_registered_path],
                                    stdout=subprocess.PIPE, 
                                    stderr=subprocess.PIPE)
