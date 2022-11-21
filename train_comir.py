@@ -31,7 +31,7 @@ import torchvision
 from torchvision.transforms.functional import affine
 from torch.utils.tensorboard import SummaryWriter
 import pytorch_ssim
-import torchfields
+
 # Other libraries
 # ~ Scientific
 import numpy as np
@@ -793,24 +793,7 @@ for epoch in range(1, epochs+1):
     tb.add_image("comirA", comirA, epoch)
     tb.add_image("comirB", comirB, epoch)
     tb.add_scalar("Loss/Train", np.mean(train_loss), epoch)
-    """
-    if equivariance is "deformable":
-        image1 = dataA[:4,:,:,:]
-        image2 = dataB[:4,:,:,:]
-        grid1 = torchvision.utils.make_grid(image1)
-        grid2 = torchvision.utils.make_grid(image2)
-        tb.add_image("modA original", grid1, epoch)
-        tb.add_image("modB original", grid2, epoch)
-        
-        comirA = L1_original[:4,:,:,:].detach()
-        comirB = L2_original[:4,:,:,:].detach()
-        comirA = torchvision.utils.make_grid(comirA)
-        comirB = torchvision.utils.make_grid(comirB)
-        comirA = np.round(scipy.special.expit(comirA.cpu().detach().numpy()) * 255).astype('uint8')
-        comirB = np.round(scipy.special.expit(comirB.cpu().detach().numpy()) * 255).astype('uint8')
-        tb.add_image("comirA undeformed", comirA, epoch)
-        tb.add_image("comirB undeformed", comirB, epoch)
-    """
+
     
         
     backup_model_path = os.path.join(export_folder, f"backup.pt")
