@@ -21,10 +21,12 @@ To create a dataset with synthetic b-spline deformations on modality A and to ge
 
 CUDA_VISIBLE_DEVICES=0 python generate_deformed_dataset.py path/to/model path/to/modality/A/ path/to/modality/B/ /path/to/generated/dataset/ <displacement>
 
+To only generate CoMIRs run inference_comir.py
+
 # Registration
 
 See INSPIRE documentation for registration. The method can be tested and compared with elastix by using test_registration.py
 
-
+To register images with generated CoMIRs, use register_comir.py 
 
 
