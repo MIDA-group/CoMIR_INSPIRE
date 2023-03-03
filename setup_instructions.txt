@@ -1,0 +1,14 @@
+
+
+1. clone INSPIRE from https://github.com/MIDA-group/inspire into the same workfolder in which CoMIR is cloned into such that the folder structure is:
+
+-working_directory
+--CoMIR_INSPIRE
+--inspire
+
+2. Install inspire with itk according to the README file in the INSPIRE repo
+
+
+3. Install all packages in requirements.txt (using pip install <package_name>)
+
+
