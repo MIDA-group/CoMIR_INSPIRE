@@ -15,7 +15,7 @@ CUDA_VISIBLE_DEVICES=0 python train_comir.py /path/to/modaloty/A/ /path/to/modal
 
 For all parameters see train_comir.py
 
-#Inference
+#INFERENCE
 
 To create a dataset with synthetic b-spline deformations on modality A and to generate CoMIRs run generate_deformed_dataset.py
 
