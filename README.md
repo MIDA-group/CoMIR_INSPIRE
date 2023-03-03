@@ -38,15 +38,15 @@ To register images with generated CoMIRs, use register_comir.py
 
 # Registration examples
 
-![cytological registration example 1](figs/figs/cytological_registration_1.png)
-![cytological registration example 2](figs/figs/cytological_registration_2.png)
+![cytological registration example 1](figs/cytological_registration_1.png)
+![cytological registration example 2](figs/cytological_registration_2.png)
 
 
-![Histological registration example 1](figs/figs/histological_registration_1.png)
-![Histological registration example 2](figs/figs/histological_registration_2.png)
+![Histological registration example 1](figs/histological_registration_1.png)
+![Histological registration example 2](figs/histological_registration_2.png)
 
-![Zurich registration example 1](figs/figs/zurich_registration_1.png)
-![Zurich registration example 2](figs/figs/zurich_registration_2.png)
+![Zurich registration example 1](figs/zurich_registration_1.png)
+![Zurich registration example 2](figs/zurich_registration_2.png)
 
 
 # References
