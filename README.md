@@ -49,13 +49,13 @@ https://github.com/MIDA-group/inspire
 ### Example 2
 ![cytological registration example 2](figs/cytological_registration_2.png)
 
-##Histological Dataset
+## Histological Dataset
 ### Example 1
 ![Histological registration example 1](figs/histological_registration_1.png)
 ### Example 2
 ![Histological registration example 2](figs/histological_registration_2.png)
 
-##Zurich Dataset
+## Zurich Dataset
 ### Example 1
 ![Zurich registration example 1](figs/zurich_registration_1.png)
 ### Example 2
