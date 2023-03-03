@@ -2,7 +2,7 @@
 
 Code of the ISBI 2022 paper: "Contrastive Learning of Equivariant Image Representations for Multimodal Deformable Registration". L. Nordling, J. Öfverstedt, J. Lindblad, N. Sladoje. 20th IEEE International Symposium on Biomedical Imaging (ISBI), IEEE, Cartagena, Colombia, April 2023.
 
-A method for multimodal deformable image registration which combines a powerful deep learning approach to generate CoMIRs, dense image-like representations of multimodal image pairs, with INSPIRE, a robust framework for monomodal deformable image registration.
+A method for multimodal deformable image registration which combines a powerful deep learning approach to generate CoMIRs, dense image-like representations of multimodal image pairs, with [INSPIRE](https://github.com/MIDA-group/inspire), a robust framework for monomodal deformable image registration.
 Incorporates additional equivariance constraints for improved consistency of [CoMIRs](https://github.com/MIDA-group/CoMIR) under deformation. 
 
 ## Installation
