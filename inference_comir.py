@@ -271,8 +271,8 @@ for i in range(int(np.ceil(N / batch_size))):
         
             padsz = 128
             orig_shape = batch.shape
-            pad1 = compute_padding(batch.shape[-1])
-            pad2 = compute_padding(batch.shape[-2])
+            pad1 = compute_padding(batch.shape[-2])
+            pad2 = compute_padding(batch.shape[-1])
         
             padded_batch = F.pad(batch, (padsz, padsz+pad1, padsz, padsz + pad2), mode='reflect')
             #newdim = (np.array(batch.shape[2:]) // 128) * 128
@@ -308,8 +308,8 @@ for i in range(int(np.ceil(N / batch_size))):
     
         padsz = 128
         orig_shape = batch.shape
-        pad1 = compute_padding(batch.shape[-1])
-        pad2 = compute_padding(batch.shape[-2])
+        pad1 = compute_padding(batch.shape[-2])
+        pad2 = compute_padding(batch.shape[-1])
     
         padded_batch = F.pad(batch, (padsz, padsz+pad1, padsz, padsz + pad2), mode='reflect')
         #newdim = (np.array(batch.shape[2:]) // 128) * 128
@@ -354,3 +354,7 @@ for i in range(int(np.ceil(N / batch_size))):
     l, r = l+batch_size, r+batch_size
     if r > N:
         r = N
+
+#all_paths = sorted(all_paths)
+#for i in range(len(all_paths)):
+#    print(all_paths[i])
